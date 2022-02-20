@@ -13,7 +13,7 @@ const OrderWatch = () => {
   const { register, handleSubmit } = useForm();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/foods/${id}`)
+    fetch(`https://fast-beach-64990.herokuapp.com/foods/${id}`)
       .then((res) => res.json())
       .then((data) => setSingleProduct(data));
   }, []);
@@ -22,7 +22,7 @@ const OrderWatch = () => {
   const onSubmit = (data) => {
     console.log(data);
     axios
-      .post("http://localhost:5000/allorders", data)
+      .post("https://fast-beach-64990.herokuapp.com/allorders", data)
       .then((res) => {
         
         if (res.data.insertedId) {

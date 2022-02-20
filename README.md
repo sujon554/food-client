@@ -1,12 +1,12 @@
 
-# paradise Tour's and travel
+# Food Fresho
 ### service is the best policy 
 
-* tour home page
+* Food home page
 * add blog page
 * offering packages and services
 * add footer
 * add user profile and dashboard
 
 
-# Live server: https://tour-travel-554.netlify.app/
+# Live server: 

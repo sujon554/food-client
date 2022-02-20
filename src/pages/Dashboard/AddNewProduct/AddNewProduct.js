@@ -9,7 +9,7 @@ const AddNewProduct = () => {
   const [success, setSuccess] = useState();
 
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/foods", data).then((res) => {
+    axios.post("https://fast-beach-64990.herokuapp.com/foods", data).then((res) => {
       if (res.data.insertedId) {
         // alert("Package Addeded Successfully!");
         reset();

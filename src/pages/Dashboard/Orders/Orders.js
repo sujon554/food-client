@@ -6,7 +6,7 @@ const Orders = () => {
   const [reload, setReload] = useState(false);
   const [status, setStatus] = useState("Approved");
   useEffect(() => {
-    fetch("http://localhost:5000/allorders")
+    fetch("https://fast-beach-64990.herokuapp.com/allorders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [reload]);
@@ -18,7 +18,7 @@ const Orders = () => {
     );
     if (proceed) {
       setStatus(status);
-      fetch(`http://localhost:5000/updateStatus/${id}`, {
+      fetch(`https://fast-beach-64990.herokuapp.com/updateStatus/${id}`, {
         method: "PUT",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ status }),
@@ -40,7 +40,7 @@ const Orders = () => {
       "Are you sure, you want to delete this package?"
     );
     if (proceed) {
-      fetch(`http://localhost:5000/allorders/${id}`, {
+      fetch(`https://fast-beach-64990.herokuapp.com/allorders/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
