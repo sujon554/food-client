@@ -9,4 +9,4 @@
 * add user profile and dashboard
 
 
-# Live server: 
+# Live server: https://laughing-meitner-62b878.netlify.app/
